@@ -38,9 +38,11 @@ public class LSHCosineDistance {
 			// refill the vector with random values
 			for(int j=0;j<d;j++)
 			{
-				X.set(getRandomValue(1, 15), j);
-				Y.set(getRandomValue(1, 15), j);
+				X.set(getRandomValue(-15, 15), j);
+				Y.set(getRandomValue(-15, 15), j);
 			}
+			System.out.println("vector X is "+X);
+			System.out.println("vector Y is "+Y);
 			// recompute the distance
 			processor.computeAlpha(d, X, Y);
 			

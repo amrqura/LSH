@@ -55,4 +55,15 @@ public class Vector {
 			result+=Math.pow(data[i], 2);
 		return Math.sqrt(result);
 	}
+	
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String result="";
+		for(int i=0;i<dimension;i++)
+			result=result+data[i]+" ";
+		return result;
+		
+	}
 }
