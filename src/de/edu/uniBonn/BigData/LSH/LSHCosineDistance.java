@@ -26,9 +26,8 @@ public class LSHCosineDistance {
 		Y.fillData(YvectorString.split(","));
 		// compute the actual distance
 		// cos alpha=dotProduct(x,y)/[norm(X)*norm(Y)]
-		double cosAlpha=X.DotProduct(Y)/(X.getNorm()*Y.getNorm());
-		double alpha=Math.acos(cosAlpha)*(180/Math.PI);
-		System.out.println("the accurate alpha between X and Y ="+alpha);
+		System.out.println("vector X is "+X);
+		System.out.println("vector Y is "+Y);
 		CosineDistanceProcessor processor=new CosineDistanceProcessor();
 		processor.computeAlpha(d, X, Y);
 		
